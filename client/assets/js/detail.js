@@ -1,20 +1,11 @@
-  // Je récupère l'ensemble des informations de mon formulaire
-  var nom = document.querySelector('#nom');
+   var nom = document.querySelector('#nom');
   var description = document.querySelector('#description');
   var prix = document.querySelector('#prix');
   var stock = document.querySelector('#stock');
   var date = document.querySelector('#date');
 
-
-  // Récupérer l'identifiant du film
-  // Objet window contient plein d'information lié au navigateur
-  // y compris son url
   var url = window.location;
   console.log(url);
-  // J'utilise la propriété hash de mon url pour récupérer l'identifiant
-  var filmId = url.hash;
-  // J'utilise la méthode substring(<indiceDepart>, <indiceFin>) indiceFin est optionel
-  // 'Bonjour'.substring(1, 3) => 'onj'
   filmId = filmId.substring(1);
   console.log(filmId);
 
